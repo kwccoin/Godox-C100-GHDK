@@ -1,0 +1,162 @@
+== 1308 98d 10:17:21
+[v5] display=on
+[v5] led=on
+[v5] sound=off
+[v5] log=on
+[v5] usb_photo=drive
+[v5] usb_video=webcam
+[v5] usb_meter=webcam
+[v5] v5 2416+6504 B, C100.TXT ok
+[v5] cfg 1101 usb 122
+ @30fps 
+>>MD_size:8220
+ >>md_work_iram_addr:0xf8000000
+CDSP init completed
+drv_l2_sensor_set_mclkout:3
+cdsp set normal mode!!!
+MipiRawFmt = 1
+sensor type[1] 0x0
+==>sat_yuv_thr:3251344, si.max_ev_idx:291, si.night_ev_idx:200
+sat_yuv_thr = 200, 229, 258,287
+sat_yuv_thr_1 [0]= 180, [1]=186, [2]=192,[3]=198...[15]=270
+
+ ==== gp_awb_process ==== 
+AWB mode = AWB_AUTO_DC
+
+ ==== gp_ae_process ==== 
+
+ ==== gp_sensor_ae_process ==== 
+>>SensorAE ID:2154688
+MSG: gp_aeawb_create ok!!
+drv_l2_cdsp_enable
+drv_l2_cdsp_enable_pre
+===drv_l2_cdsp_sat_contrast_reinit_thr===
+sat_yuv_thr = 200, 216, 232,248
+sat_yuv_thr_1 [0]= 180, [1]=183, [2]=186,[3]=189...[15]=225
+ ==>>AWB Mode:0
+ ==>>AWB SPEED:14
+=>CaptureRaw_Mode=0x43
+g_AeTable[0]=0
+g_AeTable[1]=0
+g_AeTable[2]=4
+g_AeTable[3]=8
+g_AeTable[4]=12
+g_AeTable[5]=16
+g_AeTable[6]=20
+g_AeTable[7]=24
+g_AeTable[8]=0
+g_AeTable[9]=0
+g_AeTable[10]=11
+g_AeTable[11]=0
+g_AeTable[12]=22
+g_AeTable[13]=0
+g_AeTable[14]=4
+g_AeTable[15]=0
+g_AeTable[16]=2
+RAW_Win Set: subsample = 0, size[118, 62],  offset[8, 16]
+AeWinTest = 0
+RawWinOffset[8,16]
+RawWinCellSize[118,62]
+AeWp&BpThr[220,16]
+gp_isp_awb_set_cnt_thr & gp_isp_ae_set_lum_bound
+===set ae_user_weight_table===
+*********** ae.ae_user_weight_table = NULL;**********
+gp_isp_ae_set_meter = 0x5
+**************CDSP_AE_USER_DEFAULT_SET****************
+drv_l2_IspSetAWB = 1
+drv_l2_CdspSetSharpen 
+drv_l2_CdspSetHbNr 
+++++++length_para = 1
+cdsp set enable finish
+===drv_l2_cdsp_sat_contrast_reinit_thr===
+sat_yuv_thr = 200, 216, 232,248
+sat_yuv_thr_1 [0]= 180, [1]=183, [2]=186,[3]=189...[15]=225
+drv_l1_mipi_set_parameter---
+MIPI1 init completed.
+== 3456 98d 10:17:23
+gc2083_sccb_write_table: sccb write fail: reg = 0x17, val = 0xc
+Sensor GC4653 30fps init completed
+ @30fps 
+###########ENTER MODE [102]
+state_photo_capture_init ... 
+
+=>video_encode_sensor_on!!!
+<<STATE_PHOTO_CAPTURE
+<<capture resolution = 0
+sensor_raw_width=(1920 1080),arg->Target=(1920 1080) 
+
+[Fmode]1,[Rmode]3)
+
+[R]Tw:1920,Th:1080, Sw:1920,Sh:1080, Cw:1920,Ch1080
+
+[T]Dw:320,Dh:240, Pw:128,Ph:96
+
+[V]x:0,y:0, Cw:1920,Ch:1080, Sw:1920,Sh1080,crop:0,scaler:0
+ >>0.frame_width_after_clip:(1920,1080),gframeRangeArgs.point_x=(0,0)
+drv_l2_cdsp_set_ae_window_ReDo(w=1920, h=1080) 
+RAW_Win Set: size[118, 62],  offset[8, 16]
+AeWinTest = 0
+RawWinOffset[8,16]
+RawWinCellSize[118,62]
+AeWp&BpThr[220,16]
+=>ispClip & ispScaler Done 
+RAW_Win Set: subsample = 0, size[118, 62],  offset[8, 16]
+AeWinTest = 0
+RawWinOffset[8,16]
+RawWinCellSize[118,62]
+AeWp&BpThr[220,16]
+gp_isp_awb_set_cnt_thr & gp_isp_ae_set_lum_bound
+===set ae_user_weight_table===
+*********** ae.ae_user_weight_table != NULL;**********
+gp_isp_ae_set_meter = 0x6
+**************CDSP_AE_USER_DEFAULT_SET****************
+**************CDSP_AE_USER_WEIGHT_SET****************
+=>video_encode_preview_on
+temp_awb=0 
+ ==>>ae_target:81920
+ ==>>ae_ev_idx_gain[val]:1024
+ ==>>ae_target:80
+org ae target = 80, after EV[6] [80]= 0
+ ==>>AWB Mode:0
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++// 
+                       @@@@@ photo @@@@@@@@ 0
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++// 
+
+[Capture Mount OK]1
+@@@CLOSE SPEAKER
+== 5611 98d 10:17:25
+bat_lvl_cal=4
+== 11951 98d 10:17:31
+
+adc_key_judge -Key 1 
+ap_peripheral_ok_key_exe 0 
+vfsFreeSpac= 31982 MB,g_factory=0,file_index=0
+MSG_STORAGE_SERVICE_VID_H264_REQ 
+--------------------------------FileName6 = IMG_0000.jpg
+=>video_encode_capture_picture!!!
+photo_write_buf = 0x647b80
+F[JPEG output buffer size 460816
+F[Out full]Capture OK, Size=286 kbtye
+ capture done 
+=>video_encode_preview_on
+battery_adc=787 4 
+== 22726 98d 10:17:42
+battery_adc=785 4 
+== 31315 98d 10:17:51
+
+FPS_tft(vblank,update,ispEof,FPS,)=(52, 24, 25, 0)
+free heap size: 13421248
+== 33470 98d 10:17:53
+battery_adc=787 4 
+== 44120 98d 10:18:04
+battery_adc=785 4 
+== 57055 98d 10:18:17
+battery_adc=783 4 
+== 61360 98d 10:18:21
+
+FPS_tft(vblank,update,ispEof,FPS,)=(52, 26, 26, 0)
+free heap size: 13421248
+--gPower_off_count=10 ,0
+== 67826 98d 10:18:27
+battery_adc=783 4 

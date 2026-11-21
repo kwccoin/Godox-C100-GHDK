@@ -1,0 +1,22 @@
+# Godox C100 settings. Uncomment a line to change it.
+
+# LCD on or off. A long press on the middle button toggles display and LED.
+display=on
+
+# Status LED.
+led=on
+
+# Key, shutter and power-on sounds.
+sound=off
+
+# Write LOG.TXT: the patch's lines and the firmware's debug output.
+log=on
+
+# USB per switch position: drive or webcam. Only the defaults below are tested.
+usb_photo=drive
+usb_video=webcam
+usb_meter=webcam
+
+# Pin level that means LED off, GPIO 43 and 95.
+#led_off43=0
+#led_off95=0
